@@ -1,0 +1,39 @@
+.galStyle{
+  padding: 10rem 0;
+}
+.galStyle .gallery__allItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5rem;
+  margin-top: 5rem;
+}
+.galStyle .gallery__searchBar {
+  position: relative;
+  width: 300px;
+  margin-top: 5rem;
+}
+.galStyle .gallery__searchBar input {
+  width: 100%;
+  font-size: 2rem;
+  padding: 0.8rem;
+  color: var(--black);
+  background-color: var(--egg-white);
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+.galStyle .gallery__searchBar .searchIcon {
+  position: absolute;
+  width: 2rem;
+  right: 1rem;
+}
+.galStyle .gallery__searchBar .searchIcon path {
+  color: var(--deep-dark);
+}
+@media only screen and (max-width: 768px) {
+  .galStyle .gallery__searchBar,
+  .galStyle .gallery__searchBar form,
+  .galStyle .gallery__searchBar input {
+    width: 100%;
+  }
+}

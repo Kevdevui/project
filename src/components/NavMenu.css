@@ -1,0 +1,117 @@
+.navStyles{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--dark-vanilla);
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+}
+.navStyles ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+.navStyles ul li {
+  display: inline-block;
+  border-radius: 8px;
+  transition: 0.3s ease background-color;
+}  
+.navStyles ul li:hover {
+  background-color: var(--egg-white);
+}
+.navStyles ul li a {
+  display: inline-block;
+  font-family: 'RobotoMono Regular';
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: var(--black);
+  outline: none;
+}
+.navStyles a.active {
+  color: var(--warm-red);
+  border: 2px solid var(--warm-red);
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.mobile-menu-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 4rem;
+  cursor: pointer;
+  display: none;
+  outline: none;
+}
+.mobile-menu-icon * {
+  pointer-events: none;
+}
+.navItems .closeNavIcon {
+  display: none;
+}
+.navStyles .mobile-bar .nav-logo{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navStyles{
+    padding: 0;
+    background-color: var(--white);
+  }
+  .navStyles .hide-item {
+    transform: translateY(calc(-100% - var(--top)));
+  }
+  .navStyles .mobile-bar{
+    margin-left: 20px;
+    height: 40px;
+  }
+  .navStyles .mobile-bar .nav-logo{
+    /* margin-top: 15px;
+    margin-left: 20px; */
+    margin: 20px 0px 0px 20px;
+    font-family: 'Montserrat SemiBold';
+    font-size: 2rem;
+    color: var(--jellybean-red);
+    text-shadow: -1px -1px 1px var(--black);
+    display: block;
+  }
+  .navStyles .mobile-menu-icon {
+    display: block;
+  }
+  .navStyles .navItems {
+    --top: 1rem;
+    transition: 0.3s ease transform;
+    background-color: var(--white);
+    padding: 2rem;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 12px;
+    position: absolute;
+    right: 1rem;
+    top: var(--top);
+  }
+  .navStyles .navItems .closeNavIcon{
+    display: block;
+    width: 3rem;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+  }
+  .navStyles .navItems .closeNavIcon *{
+    pointer-events: none;
+  }
+  .navStyles .navItems li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 400px){
+  .navStyles .mobile-bar{
+    margin-left: 1px;
+  }
+}

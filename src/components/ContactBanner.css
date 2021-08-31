@@ -1,0 +1,19 @@
+.cbStyles{
+  padding: 5rem 0;
+}
+.cbStyles .contactBanner__wrapper {
+  /* background-color: var(--dark-vanilla); */
+  border-radius: 12px;
+  padding: 5rem 0rem;
+  text-align: center;
+}
+.cbStyles .contactBanner__heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cbStyles .contactBanner__heading {
+    font-size: 2.8rem;
+  }
+}

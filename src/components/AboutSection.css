@@ -1,0 +1,72 @@
+.aboutStyle{
+  padding: 10rem 0;
+}
+.aboutStyle .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+}
+.aboutStyle .aboutSection__left,
+.aboutStyle .aboutSection__right {
+  flex: 1;
+}
+.aboutStyle .secTitle {
+  text-align: left;
+}
+.aboutStyle .aboutSection__left .pStyle {
+  margin-top: 2rem;
+  margin-left: 0;
+}
+.aboutStyle .aboutSection__left .aboutSection__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.aboutStyle .aboutSection__right .aboutImg{
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid var(--dark-vanilla);
+}
+
+@media only screen and (max-width: 950px) {
+  .aboutStyle .container .aboutSection__left {
+    flex: 4;
+  }
+  .aboutStyle .container .aboutSection__right {
+    flex: 3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutStyle .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutStyle  .aboutSection__left,
+  .aboutStyle .aboutSection__right {
+    width: 100%;
+  }
+  .aboutSection__right {
+    margin-top: 3rem;
+  }
+  .aboutStyle .container .secTitle {
+    text-align: center;
+  }
+  .aboutStyle .aboutSection__left .pStyle {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: justify;
+  }
+  .aboutSection__buttons {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .aboutSection__buttons .button-wrapper,
+  .aboutSection__buttons  a {
+    width: 100%;
+    text-align: center;
+  }
+}

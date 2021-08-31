@@ -1,0 +1,13 @@
+.colStyle .heading {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  /* color: var(--warm-red); */
+  color: var(--jellybean-red);
+  }
+.colStyle li {
+  margin-bottom: 1rem;
+  }
+.colStyle a {
+  font-size: 1.8rem;
+  color: var(--black);
+  }
